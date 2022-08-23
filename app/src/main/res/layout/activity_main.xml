@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.keyboard.ln.AutoEditView
+        android:id="@+id/gas_input_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:minHeight="40dp"
+        android:singleLine="true"
+        android:hint="请输入购气量"
+        android:textSize="15dp"
+        android:background="@drawable/rect_white_corner"
+        android:paddingLeft="15dp" />
+
+       <LinearLayout
+        android:id="@+id/ll_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp">
+            <com.keyboard.ln.CustomKeyboardViewLN
+                android:id="@+id/keyboard_view_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerInParent="true"
+                android:background="#cccccc"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:keyBackground="@drawable/keyboard_selector_bg"
+                android:keyTextColor="@color/white"
+                android:keyTextSize="22dp"
+                android:labelTextSize="18dp"
+                android:shadowColor="@color/black"
+                android:shadowRadius="0.0" />
+       </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
